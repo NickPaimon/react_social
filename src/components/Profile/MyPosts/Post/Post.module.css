@@ -1,0 +1,45 @@
+.item {
+  color: #363549;
+  font-size: 14px;
+  font-weight: 800;
+  display: flex;
+  margin: 15px;
+  margin-left: -20px;
+}
+
+.item img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.post_text {
+  height: 80px;
+  position: relative;
+  bottom: 20px;
+  left: 20px;
+}
+
+.message {
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  word-spacing: .1px;
+  background: #D1C4E9;
+  height: 40px;
+  width: 490px;
+  border-radius: 15px;
+  text-indent: 10px;
+  padding-top: 10px;
+}
+
+.name {
+  font-weight: bold;
+  display: inline;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.likes {
+  text-indent: 440px;
+}

@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: local('Helvetica Neue'), url("./fonts/HelveticaNeue.ttf") format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+

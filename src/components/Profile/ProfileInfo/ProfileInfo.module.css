@@ -1,0 +1,49 @@
+.about {
+    margin-top: 25px;
+}
+
+.image {
+    margin-left: 10px;
+    height: 200px;
+    width: 200px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.description {
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 400px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.mainPhoto {
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+}
+
+.profileTitles {
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.profileInfo {
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.infoInputs {
+    padding: 5px;
+    border-radius: 6px;
+    border: none;
+    background: #D1C4E9;
+    text-indent: 10px;
+    resize: none;
+    font-size: 16px;
+}

@@ -1,0 +1,34 @@
+.container {
+    background: #ffffff;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.app-wrapper {
+    width: 900px;
+    height: 900px;
+    margin: 0 auto;
+    display: grid;
+
+    grid-template-areas:
+  "h h"
+  "n c";
+
+    grid-template-rows: 50px 1fr;
+    grid-template-columns: 2fr 10fr;
+    border: 1px solid #736C85;
+}
+
+.app-wrapper-content {
+    margin-top: 15px;
+    grid-area: c;
+    background-color: #EDE8F6;
+    margin-right: 15px;
+    overflow: scroll;
+}
+
+.app-wrapper-content::-webkit-scrollbar {
+    display: none;
+}
+
+/*dark mode animated button*/

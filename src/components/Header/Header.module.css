@@ -1,0 +1,29 @@
+.header {
+  grid-area: h;
+  background-color: #C9BAE5;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header img {
+  margin: 10px;
+  margin-left: 20px;
+  width: 40px;
+}
+
+.social {
+  margin-top: -45px;
+  text-align: left;
+  margin-left: 80px;
+  color: #443F3F;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.loginBlock {
+  margin: 15px;
+}
+
+.loginLink {
+  text-decoration: none;
+}

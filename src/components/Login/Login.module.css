@@ -1,0 +1,18 @@
+.login_form {
+    margin: 100px auto 0;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    background: #D1C4E9;
+    border: 1px solid black;
+}
+.login_input {
+    display: block;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+.login_error {
+    display: block;
+    color: #7d2330;
+}

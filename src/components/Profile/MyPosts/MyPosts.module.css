@@ -1,0 +1,60 @@
+
+h2 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.post_area {
+  margin: 35px;
+}
+
+.post_area h3 {
+  color: #363549;
+  letter-spacing: 1px;
+  font-size: 16px;
+  text-indent: 10px;
+}
+
+.post_area textarea {
+  margin-top: -10px;
+  height: 50px;
+  width: 630px;
+  border-radius: 6px;
+  border: none;
+  background: #D1C4E9;
+  color: #8F87A4;
+  text-indent: 10px;
+  resize: none;
+  font-size: 14px;
+}
+
+.post_area textarea:focus {
+  outline: none;
+}
+
+.post_area button {
+  height: 18px;
+  width: 60px;
+  font-size: 12px;
+  border: 1px solid #A69CBD;
+  background: #B9A4DD;
+  position: relative;
+  bottom: 30px;
+  left: 565px;
+  border-radius: 2px;
+}
+
+.post_area button:focus {
+  outline: none;
+}
+
+.post_area button:active {
+  border: 1px solid #736C85;
+}
+
+
+.posts {
+  margin-left: 60px;
+}
