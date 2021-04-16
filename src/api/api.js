@@ -18,7 +18,8 @@ export const authMe = {
             {
                 email: value.email,
                 password: value.password,
-                rememberMe: true
+                rememberMe: value.rememberMe,
+                captcha: value.captcha
             }).then(response => response.data);
     },
     logout() {
@@ -65,5 +66,11 @@ export const userAPI = {
         return instance.post(`follow/${id}`)
             .then(responce => responce.data);
     },
+};
+
+export const securityAPI = {
+  getCaptchaUrl() {
+      return instance.get('security/get-captcha-url')
+  }
 };
 

@@ -2,4 +2,24 @@
      width: 100px;
  }
 
+.usersBlock {
+    margin: 0 auto 0 20px;
+}
 
+.user {
+    display: flex;
+    border-top: 1px solid grey;
+    box-shadow: inset 10px 10px 60px rgb(201, 186, 229);
+}
+
+.photoButtonBlock {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.userTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+}

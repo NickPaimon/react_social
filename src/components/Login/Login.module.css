@@ -1,7 +1,7 @@
-.login_form {
+.login_form_block {
     margin: 100px auto 0;
     width: 400px;
-    height: 200px;
+    max-height: 400px;
     text-align: center;
     background: #D1C4E9;
     border: 1px solid black;
@@ -12,7 +12,14 @@
     border-radius: 2px;
 }
 
+.login_input:last-child {
+    margin-bottom: 20px;
+}
+
 .login_error {
-    display: block;
     color: #7d2330;
+}
+
+.login_form_block button {
+    margin-bottom: 15px;
 }

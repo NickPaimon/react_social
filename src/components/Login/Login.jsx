@@ -23,7 +23,8 @@ const LoginForm = (props) => {
                 initialValues={{
                     email: '',
                     password: '',
-                    rememberMe: false
+                    rememberMe: false,
+                    captcha: '',
                 }}
                 validateOnBlur
                 onSubmit={(values) => {props.loginThunkCreator(values)}}
@@ -59,9 +60,20 @@ const LoginForm = (props) => {
                         />
                         <label htmlFor={"rememberMe"}>Remember Me</label>
                         <button type={"submit"} disabled={!isValid && !dirty} onClick={handleSubmit}>Login</button>
+                        <div>
+                        {props.captchaUrl && <img src={props.captchaUrl} alt="captcha"/>}
+                        {props.captchaUrl && <input
+                            type="text"
+                            className={s.login_input}
+                            name={"captcha"}
+                            placeholder={"captcha"}
+                            value={values.captcha}
+                            onChange={handleChange}/>}
+                        </div>
                     </form>
                 )}
             </Formik>
+
         </div>
     )
 };
@@ -69,14 +81,15 @@ const LoginForm = (props) => {
 const mapStateToProps = (state) => {
     return {
         isAuth: state.auth.isAuth,
-        correctPassword: state.auth.correctPassword
+        correctPassword: state.auth.correctPassword,
+        captchaUrl: state.auth.captchaUrl
     }
 };
 
 const LoginFormContainer = connect(mapStateToProps, {loginThunkCreator})(LoginForm);
 
 const Login = (props) => {
-    return <div className={s.login_form}>
+    return <div className={s.login_form_block}>
         <h1>Login</h1>
         <LoginFormContainer />
     </div>

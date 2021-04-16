@@ -1,12 +1,22 @@
-
 .pageNumber {
     padding: 2px;
-    /*border: 1px solid grey;*/
 }
 
 .pageNumber.selected {
     font-weight: bold;
-    /*font-size: 1.1em;*/
-    /*margin: 3px;*/
     color: black;
+}
+
+.paginator {
+    margin: 20px;
+}
+
+.total {
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.totalTitle {
+    font-weight: bold;
+    margin-left: 10px;
 }

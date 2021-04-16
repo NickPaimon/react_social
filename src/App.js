@@ -14,13 +14,23 @@ import {initializeApp} from './redux/app-reducer'
 import {connect, Provider} from 'react-redux';
 import Preloader from "./components/common/Preloader/Preloader";
 import store from "./redux/redux-store";
+
 // implementing lazy loading with react lazy and suspense wrapping
+// suspense needs to be with fallback attribute
 const DialogsContainer = React.lazy(() => import('./components/Dialogs/DialogsContainer'));
 
 
 class App extends React.Component {
+    catchAllUnhandledErrors = (promiseRejectionEvent) => {
+      alert("Some Error Has Occurred");
+    };
+
     componentDidMount() {
         this.props.initializeApp();
+        window.addEventListener("unhandledrejection", this.catchAllUnhandledErrors);
+    }
+    componentWillUnmount() {
+        window.removeEventListener("unhandledrejection", this.catchAllUnhandledErrors);
     }
 
     render() {
