@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/react_social/static/css/main.411ee635.chunk.css",
-    "main.js": "/react_social/static/js/main.ac4bc6c9.chunk.js",
-    "main.js.map": "/react_social/static/js/main.ac4bc6c9.chunk.js.map",
+    "main.css": "/react_social/static/css/main.e77e675d.chunk.css",
+    "main.js": "/react_social/static/js/main.33864b48.chunk.js",
+    "main.js.map": "/react_social/static/js/main.33864b48.chunk.js.map",
     "runtime-main.js": "/react_social/static/js/runtime-main.06085f0a.js",
     "runtime-main.js.map": "/react_social/static/js/runtime-main.06085f0a.js.map",
-    "static/js/2.f761087b.chunk.js": "/react_social/static/js/2.f761087b.chunk.js",
-    "static/js/2.f761087b.chunk.js.map": "/react_social/static/js/2.f761087b.chunk.js.map",
+    "static/js/2.64fc33cf.chunk.js": "/react_social/static/js/2.64fc33cf.chunk.js",
+    "static/js/2.64fc33cf.chunk.js.map": "/react_social/static/js/2.64fc33cf.chunk.js.map",
     "static/css/3.d1689a1a.chunk.css": "/react_social/static/css/3.d1689a1a.chunk.css",
     "static/js/3.853fbd32.chunk.js": "/react_social/static/js/3.853fbd32.chunk.js",
     "static/js/3.853fbd32.chunk.js.map": "/react_social/static/js/3.853fbd32.chunk.js.map",
@@ -14,8 +14,8 @@
     "static/js/4.c49acd6d.chunk.js.map": "/react_social/static/js/4.c49acd6d.chunk.js.map",
     "index.html": "/react_social/index.html",
     "static/css/3.d1689a1a.chunk.css.map": "/react_social/static/css/3.d1689a1a.chunk.css.map",
-    "static/css/main.411ee635.chunk.css.map": "/react_social/static/css/main.411ee635.chunk.css.map",
-    "static/js/2.f761087b.chunk.js.LICENSE.txt": "/react_social/static/js/2.f761087b.chunk.js.LICENSE.txt",
+    "static/css/main.e77e675d.chunk.css.map": "/react_social/static/css/main.e77e675d.chunk.css.map",
+    "static/js/2.64fc33cf.chunk.js.LICENSE.txt": "/react_social/static/js/2.64fc33cf.chunk.js.LICENSE.txt",
     "static/media/index.css": "/react_social/static/media/HelveticaNeue.50a6cd50.ttf",
     "static/media/ava.c3bc0a10.svg": "/react_social/static/media/ava.c3bc0a10.svg",
     "static/media/icon.b169083b.svg": "/react_social/static/media/icon.b169083b.svg",
@@ -26,8 +26,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.06085f0a.js",
-    "static/js/2.f761087b.chunk.js",
-    "static/css/main.411ee635.chunk.css",
-    "static/js/main.ac4bc6c9.chunk.js"
+    "static/js/2.64fc33cf.chunk.js",
+    "static/css/main.e77e675d.chunk.css",
+    "static/js/main.33864b48.chunk.js"
   ]
 }
