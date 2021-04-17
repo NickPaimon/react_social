@@ -7,7 +7,6 @@ import {connect} from "react-redux";
 import {Redirect} from "react-router-dom";
 
 
-
 const LoginForm = (props) => {
     const validationSchema = yup.object().shape({
         email: yup.string().email('Введите верный email').required('Обязательно'),
@@ -15,8 +14,9 @@ const LoginForm = (props) => {
     });
 
     if (props.isAuth) {
-        return <Redirect to={"profile"} />
-    };
+        return <Redirect to={"profile"}/>
+    }
+    ;
     return (
         <div>
             <Formik
@@ -27,7 +27,9 @@ const LoginForm = (props) => {
                     captcha: '',
                 }}
                 validateOnBlur
-                onSubmit={(values) => {props.loginThunkCreator(values)}}
+                onSubmit={(values) => {
+                    props.loginThunkCreator(values)
+                }}
                 validationSchema={validationSchema}
             >
                 {({values, errors, touched, handleChange, handleBlur, isValid, handleSubmit, dirty}) => (
@@ -50,10 +52,10 @@ const LoginForm = (props) => {
                             onBlur={handleBlur}
                             value={values.password}/>
                         <p>{errors.password && touched.password && errors.password}
-                        {props.correctPassword
-                            ? "Wrong email or password"
-                            : null
-                        }</p>
+                            {props.correctPassword
+                                ? "Wrong email or password"
+                                : null
+                            }</p>
                         <Field
                             type={"checkbox"}
                             name={"rememberMe"}
@@ -61,14 +63,14 @@ const LoginForm = (props) => {
                         <label htmlFor={"rememberMe"}>Remember Me</label>
                         <button type={"submit"} disabled={!isValid && !dirty} onClick={handleSubmit}>Login</button>
                         <div>
-                        {props.captchaUrl && <img src={props.captchaUrl} alt="captcha"/>}
-                        {props.captchaUrl && <input
-                            type="text"
-                            className={s.login_input}
-                            name={"captcha"}
-                            placeholder={"captcha"}
-                            value={values.captcha}
-                            onChange={handleChange}/>}
+                            {props.captchaUrl && <img src={props.captchaUrl} alt="captcha"/>}
+                            {props.captchaUrl && <input
+                                type="text"
+                                className={s.login_input}
+                                name={"captcha"}
+                                placeholder={"captcha"}
+                                value={values.captcha}
+                                onChange={handleChange}/>}
                         </div>
                     </form>
                 )}
@@ -91,11 +93,13 @@ const LoginFormContainer = connect(mapStateToProps, {loginThunkCreator})(LoginFo
 const Login = (props) => {
     return <div className={s.login_form_block}>
         <h1>Login</h1>
-        <LoginFormContainer />
+        <div className={s.tip}>
+            <p>email: <span>free@samuraijs.com</span></p>
+            <p>pass: <span>free</span></p>
+        </div>
+        <LoginFormContainer/>
     </div>
 };
-
-
 
 
 export default Login;

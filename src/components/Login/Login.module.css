@@ -23,3 +23,19 @@
 .login_form_block button {
     margin-bottom: 15px;
 }
+
+.tip {
+    width: 60%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+}
+
+.tip p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.tip p span {
+    font-family: sans-serif;
+}
